@@ -20,12 +20,19 @@ window.addEventListener("load", function(){
                     <img class="avatar" src="${json[i].picture}">
                 </div>
                 `;
+
+                //Bonus 2
+                let elements = document.querySelectorAll("li:nth-child(2)");
+                console.log(elements);
+                if(json[i].active){
+                    elements[i].style.color = "green";
+                 }
+
             }
         
             //Bonus 1
 
-            //Bonus 2
-
+            
             //Bonus 3
         
         });
